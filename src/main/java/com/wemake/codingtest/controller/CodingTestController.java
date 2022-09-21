@@ -66,7 +66,7 @@ public class CodingTestController {
 
             //sort
             Arrays.sort(numberStrArr);
-            Arrays.sort(engStrArr);
+            Arrays.sort(engStrArr, String.CASE_INSENSITIVE_ORDER);  //대소문자 구분없이
 
             //merge ( 교차 )
             String[] mergedArr = mergeArr(numberStrArr, engStrArr);
